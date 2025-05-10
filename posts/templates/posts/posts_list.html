@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts List</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js/main.js' %}"></script>
-    {% block extra_head %}
-    <meta name="description" content="A list of all posts">
-    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
-    {% endblock %}
-</head>
-<body>
-    <h1>Posts List</h1>
+{% extends "layout.html" %}
+
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Posts Page</h1>
+    <p>This is a simple posts page for our website.</p>
     <ul>
         <li>Post 1</li>
         <li>Post 2</li>
         <li>Post 3</li>
     </ul>
-</body>
-</html>
+    <a href="/about/">About</a>
+    <a href="/">Home</a>
+{% endblock %}

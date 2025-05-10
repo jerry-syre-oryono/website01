@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <h1>Welcome to the Home Page</h1>
-    <p>This is a simple home page for our website.</p>
-    <a href="/about/">About</a>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+ {% block content %}
+        <h1>Welcome to the Home Page</h1>
+        <p>This is a simple home page for our website.</p>
+        <a href="/about/">About</a>
+ {% endblock %}
+
+

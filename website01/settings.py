@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'posts',  # Add your app here
+    'posts',                       # Add your app here
 ]
 
 MIDDLEWARE = [
@@ -56,8 +56,8 @@ ROOT_URLCONF = 'website01.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],   # Specify the directory for templates
-        # 'DIRS': [],  # You can leave this empty if you don't have custom templates
+        'DIRS': [BASE_DIR / 'templates'],   ####### Specify the directory for templates
+        # 'DIRS': [],  ######### You can leave this empty if you don't have custom templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +120,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")  # Add this line to specify the static files directory 
+    os.path.join(BASE_DIR, "static")  ########################## Add this line to specify the static files directory 
 ]
 
 # Default primary key field type
